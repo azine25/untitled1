@@ -29,6 +29,5 @@ public class Building {
     public int getHeight() {
         return height;
     }
-   
 }
 

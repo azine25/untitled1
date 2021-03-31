@@ -19,7 +19,6 @@ public final class Room extends House {
                 "Doors: "+getDoors()+"\n" +
                 "Window: " + getWindow()+"\n ");
     }
-
     public String getWallpaper() {
         return wallpaper;
     }
