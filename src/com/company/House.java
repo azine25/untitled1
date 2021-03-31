@@ -6,7 +6,6 @@ public class House extends Building{
     private int quantityRoom;
     private String address;
 
-
     public House(int height, Color color, String  material, int square,String address) {
         super(height, color, material);
         this.square = square;
