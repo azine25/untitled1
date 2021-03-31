@@ -11,6 +11,8 @@ public class House extends Building{
         this.square = square;
         this.address = address;
     }
+
+
     @Override
     public void getInfo() {
         super.getInfo();
