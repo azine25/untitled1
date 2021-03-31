@@ -4,17 +4,16 @@ public class Main {
 
     public static void main(String[] args) {
 
-        House house = new House(12, Color.WHITE, Material.BRICK, 200, "Manas");
-        System.out.println("height: " + house.getHeight() + "\n" +
-                "Color: " + house.getColor() + "\n" +
-                "Square: " + house.getSquare() + "\n" +
-                "Address: " + house.getAddress());
+        House house = new House(12, Color.WHITE, "Concrete", 200, "Manas");
+        house.getInfo();
 
-        House house1 = new House(12, Color.BLACK, Material.BRICK, 200, "Manas");
+        House house1 = new House(12, Color.BLACK, "Brick", 50, "7 Microdistrict");
         house1.getInfo();
-        house1.finalHouse(1234, 6, "qweeqw");
 
-        Room room = new Room(31, Color.WHITE, Material.CONCRETE, 400, "LOL", "papers", 5, 4);
+        house1.finalHouse(184, 6, "Chiskaya 93");
+
+        Room room = new Room(31, Color.WHITE, "Concrete", 123, "Kievskaya 55",
+                "Papers", 5, 4);
         room.getInfo();
 
     }

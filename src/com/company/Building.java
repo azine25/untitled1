@@ -3,9 +3,9 @@ package com.company;
 public class Building {
     private int height;
     private Color color;
-    private Material material;
+    private String material;
 
-    public Building(int height, Color color, Material material) {
+    public Building(int height, Color color, String  material) {
         this.height = height;
         this.color = color;
         this.material = material;
@@ -15,10 +15,10 @@ public class Building {
         System.out.println(
                 "Height: " + height +
                 "\nColor: " + color + "" +
-                "\nMaterial: " + material);
+                "\nMaterial: " + material+"\n");
     }
 
-    public Material getMaterial() {
+    public String  getMaterial() {
         return material;
     }
 
