@@ -6,7 +6,7 @@ public class House extends Building{
     private int quantityRoom;
     private String address;
 
-    public House(int height, Color color, String  material, int square,String address) {
+    public House(int height, Color color,Material  material, int square,String address) {
         super(height, color, material);
         this.square = square;
         this.address = address;
@@ -14,11 +14,11 @@ public class House extends Building{
     @Override
     public void getInfo() {
         super.getInfo();
-        System.out.println("     House   "+"\nheight: "+ getHeight()+ "\n" +
+        System.out.println("\n      House   "+"\nHeight: "+ getHeight()+ "\n" +
                 "Color: "+ getColor() + "\n" +
-                "Material: "+ getMaterial()+"\n" +
+                "Layer: "+ getMaterial().getLayer()  +"Material: " + getMaterial().getMaterial()+"\n" +
                 "Square: "+ getSquare()+"\n" +
-                "Address: "+getAddress()+"\n`");
+                "Address: "+getAddress()+"\n");
     }
 
     public final void finalHouse(int square, int quantityRoom, String address) {

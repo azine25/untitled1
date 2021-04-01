@@ -3,9 +3,10 @@ package com.company;
 public class Building {
     private int height;
     private Color color;
-    private String material;
+    private Material material;
 
-    public Building(int height, Color color, String  material) {
+
+    public Building(int height, Color color,Material  material) {
         this.height = height;
         this.color = color;
         this.material = material;
@@ -15,12 +16,10 @@ public class Building {
         System.out.println(
                 "Height: " + height +
                 "\nColor: " + color + "" +
-                "\nMaterial: " + material+"\n");
+                "\nMaterial: " + material.getMaterial() +
+                        "\nLayer:" + material.getLayer());
     }
 
-    public String  getMaterial() {
-        return material;
-    }
 
     public Color getColor() {
         return color;
@@ -28,6 +27,10 @@ public class Building {
 
     public int getHeight() {
         return height;
+    }
+
+    public Material getMaterial() {
+        return material;
     }
 }
 
